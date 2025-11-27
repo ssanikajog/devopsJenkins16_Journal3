@@ -1,7 +1,8 @@
 import sys
 
-if len(sys.argv) == 2:
-    scores = [float(x) for x in sys.argv[1].split()]
+if len(sys.argv) > 1:
+    arg_str = " ".join(sys.argv[1:])
+    scores = [float(x) for x in arg_str.split()]
 else:
     scores = [50, 60, 70] 
 
